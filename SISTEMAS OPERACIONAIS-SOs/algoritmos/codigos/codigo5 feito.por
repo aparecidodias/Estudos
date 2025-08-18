@@ -1,5 +1,6 @@
 programa {
-  funcao inicio() {
+ //ok
+ funcao inicio() {
     inteiro num_1, num_2
     real soma
   
