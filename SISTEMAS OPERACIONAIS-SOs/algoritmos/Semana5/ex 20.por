@@ -7,7 +7,7 @@ programa {
     const cadeia NOME_MONSTRO_PADRAO = "Cyclops"
     cadeia np
     inteiro md ,xpt
-    real tt,ct,gpt,pt,lpc,xph,gph
+    real tt,ct,gpt,pt,lpc,xph,gph,pel
     
     escreva("--- Relatório Detalhado de Caçada no Tíbia --- \n")
 
@@ -32,23 +32,24 @@ programa {
     xpt= md * XP_POR_MONSTRO_X
     gpt= md * GP_MEDIO_POR_MONSTRO_X
     pt=  md * PESO_LOOT_MEDIO_POR_MONSTRO_X
-    lpc= gpt / ct
+    lpc= gpt - ct
     xph= xpt / tt
     gph= gpt/tt
+    pel= md * PESO_LOOT_MEDIO_POR_MONSTRO_X 
 
-    escreva("Monstro Focado: \n",NOME_MONSTRO_PADRAO)
-    escreva("Quantidade Derrotada: \n",md)
-    escreva("Tempo da Caçada: \n",tt)
+    escreva("Monstro Focado: ",NOME_MONSTRO_PADRAO,"\n")
+    escreva("Quantidade Derrotada:" ,md,"\n")
+    escreva("Tempo da Caçada: ",tt," Horas\n")
     escreva("------------------------------------------------------\n")
-    escreva("XP Total Ganhada: ",xpt,"pontos de experiência \n")
-    escreva("GP Total Estimado Coletado: ",gpt, " GPs")
-    escreva("Peso Estimado do Loot: \n",PESO_LOOT_MEDIO_POR_MONSTRO_X, " Oz")
+    escreva("XP Total Ganhada: ",xpt," pontos de experiência \n")
+    escreva("GP Total Estimado Coletado: ",gpt, " GPs \n")
+    escreva("Peso Estimado do Loot: ", pel , " Oz \n")
     escreva("------------------------------------------------------\n")
-    escreva("Custo dos Suprimentos: \n",ct, " GPs")
-    escreva("Lucro/Prejuízo Estimado: \n",lpc, " GPs")
+    escreva("Custo dos Suprimentos: ",ct, " GPs \n")
+    escreva("Lucro/Prejuízo Estimado: ",lpc, " GPs \n")
     escreva("------------------------------------------------------\n")
-    escreva("Média de XP por Hora: \n",xpt, " XP/h")
-    escreva("Média de GP por Hora: \n",gpt, " GP/h")
+    escreva("Média de XP por Hora: ",xpt, " XP/h \n")
+    escreva("Média de GP por Hora: ",gpt, " GP/h \n")
     escreva("------------------------------------------------------\n")
     escreva("Bom jogo, Paladino Aventureiro!")
 
