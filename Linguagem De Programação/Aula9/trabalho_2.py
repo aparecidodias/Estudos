@@ -1,6 +1,6 @@
 nome = input("Qual seu nome?" )
-idade = int(input("Qual a sua idade?" ))
+bv = input ("Boas vindas")
 
-with open("aula.9.txt","w") as arquivo:
+with open("avaliaçãoBruno.txt","w") as arquivo:
     arquivo.write(f"nome : {nome}\n")
-    arquivo.write(f"idade : {idade}\n")
+    arquivo.write(f"Boas vindas : {bv}")
