@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <h1>Teste de Formulário</h1>
+    <h1>Formulário com Datas e Números</h1>
 
      <form action="cadastro.php" method="get">
         <!--Aréa Formulário com datas e numeros-->
@@ -21,26 +21,26 @@
 
         <div>
             <label for="idmédia">Média</label>
-            <input type="text" name="Média">
+            <input type="text" name="Média" id="media" placeholder="numeros" min="0" max="25" step="0.5">
         </div>
 
         <div>
 
           <label for="idperiodoletivo">Período Letivo</label>
-          <input type="text" name="Período Letivo">
+          <input type="month" name="idperiodoletivo" value="2025-10">
             
         </div>
 
         <div>
 
           <label for="iddiadeprova">Dia de Prova</label> 
-          <input type="text" name="Dia de Prova"> 
+          <input type="date" name="Dia de Prova" id="iddiadeprova"> 
     
         </div>
 
         <div>
 
-         <label for=""></label>
+         <label for="idmédia"></label>
             
         </div>
         <!---Area dos Botoes-->
