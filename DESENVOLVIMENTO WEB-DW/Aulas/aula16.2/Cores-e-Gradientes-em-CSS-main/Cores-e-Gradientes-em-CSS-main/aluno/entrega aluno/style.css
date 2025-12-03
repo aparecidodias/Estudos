@@ -1,0 +1,33 @@
+body {
+    background-color:#172026 ;
+    color:#5FCDD9 ;
+}
+
+header{
+    background-color: #027373;
+}
+
+nav a {
+    color:#04BF9D ;
+}
+
+nav a:hover {
+    color: #5FCDD9;
+    }
+
+h1 {
+    color:#04BFAD ;
+}
+
+h2 {
+    color: #04BF9D;
+}
+
+footer{
+    background-color: #3a6e77;
+    color:#ffffff ;
+}
+
+footer span {
+    color:#d5dbdb ;
+}
